@@ -1,0 +1,68 @@
+
+
+// 2 Columns , sub on left
+
+.grid-sX-main(@cells-num) when(@cells-num > 0) {
+	(~".grid-s@{cells-num}-main"){.subX-main(@cells-num);}
+	.grid-sX-main(@cells-num - 1);
+}
+.grid-sX-main(0){}
+
+.subX-main(@cells-num){
+	&>.sub{
+		width:@cells-num * @cells-width;
+		float:left;
+	}
+	&>.main{
+		margin-left:@cells-num * @cells-width;
+	}
+}
+
+// 2 Columns , sub on right
+
+.grid-main-sX(@cells-num) when(@cells-num > 0) {
+	(~".grid-main-s@{cells-num}"){.main-sX(@cells-num);}
+	.grid-main-sX(@cells-num - 1);
+}
+.grid-main-sX(0){}
+
+.main-sX(@cells-num){
+	&>.sub{
+		width:@cells-num * @cells-width;
+		float:right;
+	}
+	&>.main{
+		margin-right:@cells-num * @cells-width;
+	}
+}
+
+
+// 3 Columns
+
+
+.grid-sX-main-eX-inner(@sub-num , @extra-num) when(@extra-num > 0) {
+	(~".grid-s@{sub-num}-main-e@{extra-num}"){.sX-main-eX(@sub-num,@extra-num);}
+	.grid-sX-main-eX-inner(@sub-num , @extra-num - 1);
+}
+.grid-sX-main-eX-inner(0,0){}
+
+.grid-sX-main-eX(@sub-num , @extra-num) when( @sub-num > 0) {
+	.grid-sX-main-eX-inner(@sub-num, @extra-num);
+	.grid-sX-main-eX(@sub-num - 1, @extra-num);
+	.grid-sX-main-eX-inner(0,@extra-num){}
+}
+
+.sX-main-eX(@sub-num,@extra-num){
+	&>.sub{
+		width:@sub-num * @cells-width;
+		float:left;
+	}
+	&>.extra{
+		width:@extra-num * @cells-width;
+		float:right;
+	}
+	&>.main{
+		margin-right:@extra-num * @cells-width;
+		margin-left:@sub-num * @cells-width;
+	}
+}

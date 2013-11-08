@@ -1,0 +1,20 @@
+{
+  "name": "cells-layout",
+  "version": "0.1.0",
+  "description": "Simple, Fullscreen adapting css grid layout",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "readme": "Simple, Fullscreen adapting css grid layout",
+  "warning": "",
+  "readmeFilename": "README.md",
+  "author": "epingchow",
+  "license": "The MIT License",
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-clean": "~0.5.0",
+    "grunt-contrib-watch": "*",
+    "grunt-recess": "~0.4.0",
+    "grunt-contrib-cssmin": "*"
+  }
+}
