@@ -5,150 +5,81 @@
 	<title>cells-layout</title>
 	<link rel="stylesheet" href="../dist/css/cells.min.css">
 	<style type="text/css">
+		html,body{
+			height:100%;
+		}
 		[class*=grid]{
-			background-color:#FDD;
+			background-color:#00547C;
+			text-align: center;
+			height:100%;
 		}
 		.main{
-			background-color:#DDF;
-			height:20px;
+			background-color:#DAE5EE;
+			height:100%;
 			margin-bottom:10px;
-			color:#aaa;
+			color:#333;
 
 		}
 		.sub{
-			color:#aaa;
+			color:#FFF;
 		}
 		.extra{
-			color:#aaa;
+			color:#FFF;
 		}
 		body{
 			margin:0;
 			padding:0;
+			font-size: 14px;
+		}
+		.nav{
+			margin:0;
+			padding:0;
+		}
+		.nav li>a{
+			display:block;
+			font-size:20px;
+			color:#FFF;
+			text-decoration: none;
+			line-height:20px;
+			padding:10px 20px;
+			text-align: center;
+			background-color:#184466;
+			margin-top:10px;
+		}
+		.nav li>a:hover{
+			background-color:#08F;
 		}
 	</style>
 </head>
 <body>
-	<div class="grid-s1-main">
-		<div class="sub">sub</div>
+	<div class="grid-s6-main">
+		<div class="sub">
+			<ul class="nav">
+				<li><a href="#">nav 1</a></li>
+				<li><a href="#">nav 2</a></li>
+				<li><a href="#">nav 3</a></li>
+				<li><a href="#">nav 4</a></li>
+			</ul>
+		</div>
 		<div class="main">
-			<div class="grid-s5-main">
-				<div class="sub">sub</div>
-				<div class="main">main</div>
+			<div style="padding:10px;">
+				<div class="grid-s2-main-e3" style="box-shadow:0 0 5px rgba(0,0,0,0.5);margin-top:10px;height:200px;">
+					<div class="sub"></div>
+					<div class="extra"></div>
+					<div class="main"></div>
+				</div>
+				<div class="grid-s3-main-e1" style="box-shadow:0 0 5px rgba(0,0,0,0.5);margin-top:10px;height:200px;">
+					<div class="sub"></div>
+					<div class="extra"></div>
+					<div class="main"></div>
+				</div>
+				<div class="grid-s10-main" style="box-shadow:0 0 5px rgba(0,0,0,0.5);margin-top:10px;height:200px;">
+					<div class="sub"></div>
+					<div class="extra"></div>
+					<div class="main"></div>
+				</div>
 			</div>
 		</div>
-	</div>
-	<div class="grid-s2-main">
-		<div class="sub">sub</div>
-		<div class="main">main</div>
-	</div>
-	<div class="grid-s3-main">
-		<div class="sub">sub</div>
-		<div class="main">main</div>
-	</div>
-	<div class="grid-s4-main">
-		<div class="sub">sub</div>
-		<div class="main">main</div>
-	</div>
-	<div class="grid-s5-main">
-		<div class="sub">sub</div>
-		<div class="main">main</div>
-	</div>
-	<div class="grid-s6-main">
-		<div class="sub">sub</div>
-		<div class="main">main</div>
-	</div>
-	<div class="grid-s7-main">
-		<div class="sub">sub</div>
-		<div class="main">main</div>
-	</div>
-	<div class="grid-s8-main">
-		<div class="sub">sub</div>
-		<div class="main">main</div>
-	</div>
-	<div class="grid-s9-main">
-		<div class="sub">sub</div>
-		<div class="main">main</div>
-	</div>
-	<div class="grid-s10-main">
-		<div class="sub">sub</div>
-		<div class="main">main</div>
-	</div>
-
-	<div class="grid-main-s1">
-		<div class="sub">sub</div>
-		<div class="main">main</div>
-	</div>
-	<div class="grid-main-s2">
-		<div class="sub">sub</div>
-		<div class="main">main</div>
-	</div>
-	<div class="grid-main-s3">
-		<div class="sub">sub</div>
-		<div class="main">main</div>
-	</div>
-	<div class="grid-main-s4">
-		<div class="sub">sub</div>
-		<div class="main">main</div>
-	</div>
-	<div class="grid-main-s5">
-		<div class="sub">sub</div>
-		<div class="main">main</div>
-	</div>
-	<div class="grid-main-s6">
-		<div class="sub">sub</div>
-		<div class="main">main</div>
-	</div>
-	<div class="grid-main-s7">
-		<div class="sub">sub</div>
-		<div class="main">main</div>
-	</div>
-	<div class="grid-main-s8">
-		<div class="sub">sub</div>
-		<div class="main">main</div>
-	</div>
-	<div class="grid-main-s9">
-		<div class="sub">sub</div>
-		<div class="main">main</div>
-	</div>
-	<div class="grid-main-s10">
-		<div class="sub">sub</div>
-		<div class="main">main</div>
-	</div>
-
-	<div class="grid-s1-main-e1">
-		<div class="sub">sub</div>
-		<div class="extra">extra</div>
-		<div class="main">main</div>
-	</div>
-	<div class="grid-s3-main-e3">
-		<div class="sub">sub</div>
-		<div class="extra">extra</div>
-		<div class="main">main</div>
-	</div>
-	<div class="grid-s5-main-e5">
-		<div class="sub">sub</div>
-		<div class="extra">extra</div>
-		<div class="main">main</div>
-	</div>
-	<div class="grid-s7-main-e3">
-		<div class="sub">sub</div>
-		<div class="extra">extra</div>
-		<div class="main">main</div>
-	</div>
-	<div class="grid-s10-main-e1">
-		<div class="sub">sub</div>
-		<div class="extra">extra</div>
-		<div class="main">main</div>
-	</div>
-	<div class="grid-s3-main-e7">
-		<div class="sub">sub</div>
-		<div class="extra">extra</div>
-		<div class="main">main</div>
-	</div>
-	<div class="grid-s1-main-e10">
-		<div class="sub">sub</div>
-		<div class="extra">extra</div>
-		<div class="main">main</div>
 	</div>
 </body>
 </html>
