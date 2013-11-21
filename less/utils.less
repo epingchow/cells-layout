@@ -1,0 +1,32 @@
+
+body {
+	.grid-collapse{
+		&>.sub{
+			width:0;
+			//display: none;
+		}
+		&>.extra{
+			width:0;
+			//display:none;
+		}
+		&>.main{
+			margin-left:0;
+		}
+	}
+}
+.grid-transition{
+	.sub{
+		.transition(all 0.2s);
+	}
+	.main{
+		.transition(all 0.2s);
+	}
+}
+
+// Transitions
+.transition(@transition) {
+  -webkit-transition: @transition;
+     -moz-transition: @transition;
+       -o-transition: @transition;
+          transition: @transition;
+}

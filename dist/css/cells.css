@@ -1,3 +1,29 @@
+body .grid-collapse > .sub {
+  width: 0;
+}
+
+body .grid-collapse > .extra {
+  width: 0;
+}
+
+body .grid-collapse > .main {
+  margin-left: 0;
+}
+
+.grid-transition .sub {
+  -webkit-transition: all 0.2s;
+     -moz-transition: all 0.2s;
+       -o-transition: all 0.2s;
+          transition: all 0.2s;
+}
+
+.grid-transition .main {
+  -webkit-transition: all 0.2s;
+     -moz-transition: all 0.2s;
+       -o-transition: all 0.2s;
+          transition: all 0.2s;
+}
+
 .grid-s10-main > .sub {
   float: left;
   width: 400px;

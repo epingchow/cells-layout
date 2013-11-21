@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>cells-layout</title>
+	<link rel="stylesheet" href="../dist/css/cells.min.css">
+	<style type="text/css">
+		[class*=grid]{
+			background-color:#FDD;
+		}
+		.main{
+			background-color:#DDF;
+			height:20px;
+			margin-bottom:10px;
+			color:#aaa;
+
+		}
+		.sub{
+			color:#aaa;
+		}
+		body{
+			margin:0;
+			padding:0;
+		}
+	</style>
+
+</head>
+<body>
+	
+			<div id="test" class="grid-s5-main">
+				<div class="sub">sub</div>
+				<div class="main" style="height:500px;">
+<a href="javascript:void(0);" onclick="toggle();"> toggle </a>
+				main
+				</div>
+			</div>
+			<script type="text/javascript">
+
+	function toggle(){
+		var el=document.getElementById("test");
+		if(el.className.indexOf("grid-collapse")!=-1){
+			el.className="grid-s5-main";
+
+		}else{
+			el.className="grid-s5-main grid-collapse";
+		}
+	}
+
+			</script>
+</body>
+</html>
